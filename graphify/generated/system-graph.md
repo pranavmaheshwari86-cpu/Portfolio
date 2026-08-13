@@ -18,14 +18,16 @@ graph TD
         App ==> ContactModal[src/components/ContactModal.tsx]
     end
 
-    subgraph Data Layer
+    subgraph Data & Services Layer
         Data[src/data/portfolioData.ts] ..-> Hero
         Data ..-> About
         Data ..-> ProcessTimeline
         Data ..-> Projects
+        Data ..-> ContactModal
+        FormSubmit[FormSubmit AJAX API] ..-> ContactModal
     end
 
-    subgraph Libraries & Styling
+    subgraph Libraries & Browser APIs
         CSS[src/index.css] --> App
         Confetti[canvas-confetti] --> ContactModal
         Motion[framer-motion] --> Preloader
@@ -33,5 +35,6 @@ graph TD
         Icons[lucide-react] --> Navbar
         Icons --> Hero
         Icons --> Projects
+        Obs[IntersectionObserver API] --> Hero
     end
 ```

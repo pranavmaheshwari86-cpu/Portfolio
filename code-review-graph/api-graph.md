@@ -9,7 +9,9 @@ graph LR
 
     NavClick --> Scroll[Smooth Scroll to Anchor]
     ContactBtn --> ModalOpen[App.tsx sets isContactOpen=true]
-    FormSubmit --> Confetti[Trigger canvas-confetti particle effect]
-    FormSubmit --> Reset[Reset Form Inputs & Close Modal]
+    FormSubmit --> APIFetch[POST https://formsubmit.co/ajax/Pranavmaheshwari86@gmail.com]
+    APIFetch -->|Success| Confetti[Trigger canvas-confetti particle effect]
+    APIFetch -->|Success| Reset[Reset Form Inputs & Close Modal]
+    APIFetch -->|Error| ErrorBanner[Render inline error message]
     SocialClick --> TabOpen[Open target=_blank with rel=noopener]
 ```
