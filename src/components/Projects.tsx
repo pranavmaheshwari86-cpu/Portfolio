@@ -163,15 +163,21 @@ export const Projects: React.FC = () => {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <a
-                    href={selectedProject.liveUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="px-6 py-3 bg-[#FF2A2A] text-white font-syne font-bold text-xs uppercase tracking-wider rounded-full hover:bg-white hover:text-black transition-all flex items-center gap-2 shadow-lg"
-                  >
-                    <span>Live Demo</span>
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
+                  {selectedProject.liveUrl ? (
+                    <a
+                      href={selectedProject.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-6 py-3 bg-[#FF2A2A] text-white font-syne font-bold text-xs uppercase tracking-wider rounded-full hover:bg-white hover:text-black transition-all flex items-center gap-2 shadow-lg"
+                    >
+                      <span>Live Demo</span>
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  ) : (
+                    <span className="px-6 py-3 bg-white/5 border border-white/10 text-white/40 font-syne font-bold text-xs uppercase tracking-wider rounded-full flex items-center gap-2 cursor-not-allowed">
+                      <span>Demo Coming Soon</span>
+                    </span>
+                  )}
                   <a
                     href={selectedProject.githubUrl}
                     target="_blank"

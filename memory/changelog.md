@@ -1,5 +1,15 @@
 # Project Changelog
 
+## [Unreleased]
+### Added
+- Added "Aetheris" AI employee verification ecosystem with Next.js 15, Express 5, Prisma/MongoDB, Gemini API, GitHub repo, and screenshot in `public/aetheris.jpg`.
+- Added graceful "Demo Coming Soon" badge fallback in `Projects.tsx` for projects without an active live URL.
+- Added "Parlee Agro" beverage brand and commerce showcase with Next.js 16/React 19 stack, live demo, GitHub URL, and screenshot in `public/parlee-agro.jpg`.
+- Added "Smart Bharat AI" project with monorepo tech stack, live URL, GitHub URL, and custom screenshot in `public/smart-bharat-ai.jpg`.
+
+### Changed
+- Updated Flowshield project `liveUrl` to `https://flowshield-one.vercel.app/`.
+
 ## [1.0.0] - 2026-08-06
 
 ### Added
