@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Fixed
+- Removed sparkle icon symbol from "Explore" project card button in `Projects.tsx`.
 - Fixed project screenshot visibility in `Projects.tsx`: removed heavy `bg-gradient-to-t` bottom dark overlay, changed container aspect ratio to 16:9 (`aspect-video`), and moved year badge to category metadata to prevent obscuring UI elements.
 - Padded `public/smart-bharat-ai.jpg` to precise 16:9 ratio to prevent cropping left navigation text and right 3D graphics.
 

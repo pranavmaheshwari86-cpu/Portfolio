@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Sparkles, X } from 'lucide-react';
+import { ExternalLink, X } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 type Project = typeof portfolioData.projects[number];
@@ -89,10 +89,9 @@ export const Projects: React.FC = () => {
 
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="px-4 py-2 rounded-full glass-panel-white text-xs font-syne font-bold uppercase tracking-wider text-white hover:bg-[#FF2A2A] hover:border-[#FF2A2A] transition-all flex items-center gap-1.5"
+                  className="px-4 py-2 rounded-full glass-panel-white text-xs font-syne font-bold uppercase tracking-wider text-white hover:bg-[#FF2A2A] hover:border-[#FF2A2A] transition-all flex items-center justify-center"
                 >
-                  <span>Explore</span>
-                  <Sparkles className="w-3.5 h-3.5" />
+                  Explore
                 </button>
               </div>
             </div>
