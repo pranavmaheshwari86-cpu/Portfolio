@@ -1,6 +1,11 @@
 # Project Changelog
 
 ## [Unreleased]
+### Removed
+- Deleted redundant duplicate media folder `Video/` (saved >5MB disk space; canonical assets live in `public/`).
+- Deleted unused boilerplate starter assets: `src/App.css`, `src/assets/hero.png`, `src/assets/react.svg`, `src/assets/vite.svg`, `public/favicon.svg`, and `public/icons.svg`.
+- Cleaned up `vite.config.ts` configuration.
+
 ### Changed
 - Replaced tab lightning symbol (`⚡`) with custom brand monogram (`P.`) favicon in `index.html`.
 - Removed word "Luxury" from browser tab title (`index.html`) and across Hero, Projects, Timeline, and portfolio data copy.
