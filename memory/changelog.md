@@ -1,6 +1,10 @@
 # Project Changelog
 
 ## [Unreleased]
+### Fixed
+- Fixed project screenshot visibility in `Projects.tsx`: removed heavy `bg-gradient-to-t` bottom dark overlay, changed container aspect ratio to 16:9 (`aspect-video`), and moved year badge to category metadata to prevent obscuring UI elements.
+- Padded `public/smart-bharat-ai.jpg` to precise 16:9 ratio to prevent cropping left navigation text and right 3D graphics.
+
 ### Added
 - Added "Aetheris" AI employee verification ecosystem with Next.js 15, Express 5, Prisma/MongoDB, Gemini API, GitHub repo, and screenshot in `public/aetheris.jpg`.
 - Added graceful "Demo Coming Soon" badge fallback in `Projects.tsx` for projects without an active live URL.

@@ -45,25 +45,25 @@ export const Projects: React.FC = () => {
             className="group relative glass-panel-dark rounded-3xl overflow-hidden border border-white/10 hover:border-[#FF2A2A]/50 transition-all duration-500 flex flex-col justify-between"
           >
             {/* Project Image Container */}
-            <div className="relative aspect-[16/10] overflow-hidden bg-gray-900">
+            <div className="relative aspect-video overflow-hidden bg-black/40 border-b border-white/10">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110"
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.03] group-hover:brightness-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent opacity-80" />
-
-              <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono text-white/90 border border-white/10">
-                {project.year}
-              </div>
             </div>
 
             {/* Content Details */}
             <div className="p-6 sm:p-8 flex flex-col justify-between flex-grow">
               <div>
-                <span className="text-xs font-mono uppercase tracking-widest text-[#FF2A2A] font-bold block mb-2">
-                  {project.category}
-                </span>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs font-mono uppercase tracking-widest text-[#FF2A2A] font-bold">
+                    {project.category}
+                  </span>
+                  <span className="text-xs font-mono px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/70">
+                    {project.year}
+                  </span>
+                </div>
 
                 <h3 className="font-syne font-extrabold text-2xl sm:text-3xl text-white group-hover:text-[#FF2A2A] transition-colors mb-3">
                   {project.title}
@@ -126,13 +126,12 @@ export const Projects: React.FC = () => {
                 <X className="w-6 h-6" />
               </button>
 
-              <div className="aspect-video w-full relative">
+              <div className="aspect-video w-full relative border-b border-white/10 bg-black/40">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1c1c1c] via-transparent to-transparent" />
               </div>
 
               <div className="p-6 sm:p-8">
