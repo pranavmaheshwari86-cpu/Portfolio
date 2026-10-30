@@ -71,7 +71,7 @@ export const ProcessTimeline: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 text-base sm:text-lg text-gray-600 font-sans font-normal max-w-2xl leading-relaxed"
         >
-          A battle-tested 4-step execution framework designed to deliver luxury design, bulletproof full-stack engineering, and flawless execution.
+          A battle-tested 4-step execution framework designed to deliver high-end design, bulletproof full-stack engineering, and flawless execution.
         </motion.p>
       </div>
 

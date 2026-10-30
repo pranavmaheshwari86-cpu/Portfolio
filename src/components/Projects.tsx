@@ -29,7 +29,7 @@ export const Projects: React.FC = () => {
         </div>
 
         <p className="text-white/70 font-sans text-sm md:text-base max-w-md">
-          A showcase of modern web applications built with precision, speed, and luxury aesthetic standards.
+          A showcase of modern web applications built with precision, speed, and premium aesthetic standards.
         </p>
       </div>
 

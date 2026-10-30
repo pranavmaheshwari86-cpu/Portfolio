@@ -5,7 +5,7 @@ export const portfolioData = {
     brandName: "Pranav.",
     role: "FullStack engineer and AI Engineer",
     location: "",
-    tagline: "Crafting high-performance modern web applications & intelligent AI solutions. Engineered for extreme scalability, luxury UX, and pixel-perfect aesthetics.",
+    tagline: "Crafting high-performance modern web applications & intelligent AI solutions. Engineered for extreme scalability, cutting-edge UX, and pixel-perfect aesthetics.",
     experienceYears: "5+",
     idPassNumber: "#8942-DEV",
     profileImage: "/profile.png",
@@ -107,7 +107,7 @@ export const portfolioData = {
     {
       number: "02",
       title: "Design",
-      subtitle: "Luxury UI/UX & Motion Prototyping",
+      subtitle: "High-End UI/UX & Motion Prototyping",
       description: "Creating award-winning visual interfaces with custom typography, calibrated color palettes, glassmorphism, and cinematic micro-interactions.",
       details: ["Design System Systematization", "Interactive Motion Prototypes", "Responsive Layouts"],
       rotation: "-rotate-3",

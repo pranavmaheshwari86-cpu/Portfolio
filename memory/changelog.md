@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 ### Changed
+- Replaced tab lightning symbol (`⚡`) with custom brand monogram (`P.`) favicon in `index.html`.
+- Removed word "Luxury" from browser tab title (`index.html`) and across Hero, Projects, Timeline, and portfolio data copy.
 - Removed lightning bolt icon from Explore buttons in `Projects.tsx` for clean, text-only button presentation.
 
 ### Fixed

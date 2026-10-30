@@ -196,7 +196,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             }}
             className="text-xs sm:text-sm text-white/80 max-w-md font-sans font-light leading-relaxed mb-6 drop-shadow-md"
           >
-            Crafting high-performance modern web applications & intelligent AI solutions. Engineered for extreme scalability, luxury UX, and pixel-perfect aesthetics.
+            Crafting high-performance modern web applications & intelligent AI solutions. Engineered for extreme scalability, cutting-edge UX, and pixel-perfect aesthetics.
           </motion.p>
 
           {/* Glowing CTA Buttons */}
