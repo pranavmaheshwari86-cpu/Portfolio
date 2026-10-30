@@ -35,3 +35,9 @@
 - **Context**: Contact modal required real email delivery to `Pranavmaheshwari86@gmail.com` without introducing server infrastructure.
 - **Decision**: Implement AJAX POST integration to FormSubmit in `ContactModal.tsx` passing visitor Name, Email, and Project Details.
 - **Consequences**: Direct email delivery with reply-to headers, loading states, error fallback handling, and zero backend maintenance.
+
+## ADR-007: Official Content Rules & Publishing Constraints Specification
+- **Status**: Approved & Implemented
+- **Context**: Content generation, copywriting, and project showcase posts require strict brand consistency, verified domain identity, and factual length limits.
+- **Decision**: Establish `CONTENT_RULES.md` as the authoritative source of truth. Verified that no in-app post publishing or DB limit exists in this client-side architecture; documented card display constraints and external distribution limits (X: 280 chars, LinkedIn: 3000 chars) with standardized output format.
+- **Consequences**: Persistent, zero-hallucination reference for all future copywriting, social updates, and case studies.
