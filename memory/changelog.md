@@ -1,6 +1,9 @@
 # Project Changelog
 
 ## [Unreleased]
+### Changed
+- Replaced Explore button symbol with custom gradient lightning bolt icon (`⚡`) matching design specification in `Projects.tsx`.
+
 ### Fixed
 - Removed sparkle icon symbol from "Explore" project card button in `Projects.tsx`.
 - Fixed project screenshot visibility in `Projects.tsx`: removed heavy `bg-gradient-to-t` bottom dark overlay, changed container aspect ratio to 16:9 (`aspect-video`), and moved year badge to category metadata to prevent obscuring UI elements.

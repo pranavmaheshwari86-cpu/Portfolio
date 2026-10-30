@@ -89,9 +89,21 @@ export const Projects: React.FC = () => {
 
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="px-4 py-2 rounded-full glass-panel-white text-xs font-syne font-bold uppercase tracking-wider text-white hover:bg-[#FF2A2A] hover:border-[#FF2A2A] transition-all flex items-center justify-center"
+                  className="px-4 py-2 rounded-full glass-panel-white text-xs font-syne font-bold uppercase tracking-wider text-white hover:bg-[#FF2A2A] hover:border-[#FF2A2A] transition-all flex items-center gap-1.5"
                 >
-                  Explore
+                  <span>Explore</span>
+                  <svg className="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none">
+                    <defs>
+                      <linearGradient id={`zap-grad-${project.id}`} x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stopColor="#FFA03A" />
+                        <stop offset="100%" stopColor="#FF4B4B" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M13 2L3 14H12L11 22L21 10H12L13 2Z"
+                      fill={`url(#zap-grad-${project.id})`}
+                    />
+                  </svg>
                 </button>
               </div>
             </div>
