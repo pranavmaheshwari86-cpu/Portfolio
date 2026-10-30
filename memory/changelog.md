@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 ### Changed
-- Replaced Explore button symbol with custom gradient lightning bolt icon (`⚡`) matching design specification in `Projects.tsx`.
+- Removed lightning bolt icon from Explore buttons in `Projects.tsx` for clean, text-only button presentation.
 
 ### Fixed
 - Removed sparkle icon symbol from "Explore" project card button in `Projects.tsx`.
